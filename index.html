@@ -70,9 +70,11 @@ preload(
 )
 
 //-- tu trzeba zmienic przycisk next--//
-	$("#next").mousedown(function(){
-	fetch('https://bscav.ngrok.io/press/bank/1/2')
-;})
+$("#next").mousedown(function(){
+fetch('https://bscav.ngrok.io/api/location/1/0/1/press', {
+    method: 'POST'
+});
+})
 	
 	
 		//'https://bscav.ngrok.io/press/bank/1/2'//
@@ -93,8 +95,10 @@ $(document).ready(function()
 	
 //-- tu trzeba zmienic przycisk back--//
 $("#back").mousedown(function(){
-fetch('https://bscav.ngrok.io/press/bank/1/3')
-;})
+fetch('https://bscav.ngrok.io/api/location/1/0/2/press', {
+    method: 'POST'
+});
+})
 
 $(document).ready(function()
 {
